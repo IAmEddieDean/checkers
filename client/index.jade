@@ -9,71 +9,71 @@ html
   body
     #page
       #board
-        .space.white#tl
-        .space.black
-        .space.white
-        .space.black
-        .space.white
-        .space.black
-        .space.white
-        .space.black#tr
-        .space.black
-        .space.white
-        .space.black
-        .space.white
-        .space.black
-        .space.white
-        .space.black
-        .space.white
-        .space.white
-        .space.black
-        .space.white
-        .space.black
-        .space.white
-        .space.black
-        .space.white
-        .space.black
-        .space.black
-        .space.white
-        .space.black
-        .space.white
-        .space.black
-        .space.white
-        .space.black
-        .space.white
-        .space.white
-        .space.black
-        .space.white
-        .space.black
-        .space.white
-        .space.black
-        .space.white
-        .space.black
-        .space.black
-        .space.white
-        .space.black
-        .space.white
-        .space.black
-        .space.white
-        .space.black
-        .space.white
-        .space.white
-        .space.black
-        .space.white
-        .space.black
-        .space.white
-        .space.black
-        .space.white
-        .space.black
-        .space.black#bl
-        .space.white
-        .space.black
-        .space.white
-        .space.black
-        .space.white
-        .space.black
-        .space.white#br
+        .space.white#tl.start(data-x = '0', data-y = '0')
+        .space.black(data-x = '1', data-y = '0')
+        .space.white.start(data-x = '2', data-y = '0')
+        .space.black(data-x = '3', data-y = '0')
+        .space.white.start(data-x = '4', data-y = '0')
+        .space.black(data-x = '5', data-y = '0')
+        .space.white.start(data-x = '6', data-y = '0')
+        .space.black#tr(data-x = '7', data-y = '0')
+        .space.black(data-x = '0', data-y = '1')
+        .space.white.start(data-x = '1', data-y = '1')
+        .space.black(data-x = '2', data-y = '1')
+        .space.white.start(data-x = '3', data-y = '1')
+        .space.black(data-x = '4', data-y = '1')
+        .space.white.start(data-x = '5', data-y = '1')
+        .space.black(data-x = '6', data-y = '1')
+        .space.white.start(data-x = '7', data-y = '1')
+        .space.white.start(data-x = '0', data-y = '2')
+        .space.black(data-x = '1', data-y = '2')
+        .space.white.start(data-x = '2', data-y = '2')
+        .space.black(data-x = '3', data-y = '2')
+        .space.white.start(data-x = '4', data-y = '2')
+        .space.black(data-x = '5', data-y = '2')
+        .space.white.start(data-x = '6', data-y = '2')
+        .space.black(data-x = '7', data-y = '2')
+        .space.black(data-x = '0', data-y = '3')
+        .space.white(data-x = '1', data-y = '3')
+        .space.black(data-x = '2', data-y = '3')
+        .space.white(data-x = '3', data-y = '3')
+        .space.black(data-x = '4', data-y = '3')
+        .space.white(data-x = '5', data-y = '3')
+        .space.black(data-x = '6', data-y = '3')
+        .space.white(data-x = '7', data-y = '3')
+        .space.white(data-x = '0', data-y = '4')
+        .space.black(data-x = '1', data-y = '4')
+        .space.white(data-x = '2', data-y = '4')
+        .space.black(data-x = '3', data-y = '4')
+        .space.white(data-x = '4', data-y = '4')
+        .space.black(data-x = '5', data-y = '4')
+        .space.white(data-x = '6', data-y = '4')
+        .space.black(data-x = '7', data-y = '4')
+        .space.black(data-x = '0', data-y = '5')
+        .space.white.startR(data-x = '1', data-y = '5')
+        .space.black(data-x = '2', data-y = '5')
+        .space.white.startR(data-x = '3', data-y = '5')
+        .space.black(data-x = '4', data-y = '5')
+        .space.white.startR(data-x = '5', data-y = '5')
+        .space.black(data-x = '6', data-y = '5')
+        .space.white.startR(data-x = '7', data-y = '5')
+        .space.white.startR(data-x = '0', data-y = '6')
+        .space.black(data-x = '1', data-y = '6')
+        .space.white.startR(data-x = '2', data-y = '6')
+        .space.black(data-x = '3', data-y = '6')
+        .space.white.startR(data-x = '4', data-y = '6')
+        .space.black(data-x = '5', data-y = '6')
+        .space.white.startR(data-x = '6', data-y = '6')
+        .space.black(data-x = '7', data-y = '6')
+        .space.black#bl(data-x = '0', data-y = '7')
+        .space.white.startR(data-x = '1', data-y = '7')
+        .space.black(data-x = '2', data-y = '7')
+        .space.white.startR(data-x = '3', data-y = '7')
+        .space.black(data-x = '4', data-y = '7')
+        .space.white.startR(data-x = '5', data-y = '7')
+        .space.black(data-x = '6', data-y = '7')
+        .space.white#br.startR(data-x = '7', data-y = '7')
 
 
-    script(src='/vendor/lodash/lodash.min.js')
+    script(src='/vendor/jquery/dist/jquery.min.js')
     script(src=isProd ? '/index.min.js' : '/index.js')
